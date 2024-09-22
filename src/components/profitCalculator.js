@@ -41,7 +41,7 @@ const ProfitCalculator = () => {
         </div>
 
         {/* Right Section (Hidden on smaller screens) */}
-        <div className="hidden md:block md:w-1/2 p-8 flex justify-center">
+        <div className="hidden md:block md:w-1/2 p-8 justify-center">
           <img
             src={profit} // Replace with the actual image URL
             alt="Profit Illustration"
