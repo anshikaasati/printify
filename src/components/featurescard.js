@@ -32,6 +32,7 @@ const FeatureCards = () => {
     });
 
     return () => {
+      // eslint-disable-next-line react-hooks/exhaustive-deps
       cardRefs.current.forEach((card) => {
         if (card) {
           observer.unobserve(card); // Clean up on unmount
