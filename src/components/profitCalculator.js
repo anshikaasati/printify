@@ -42,7 +42,7 @@ const ProfitCalculator = () => {
         </div>
 
         {/* Right Section (Hidden on smaller screens) */}
-        <div className="hidden md:block md:w-1/2 p-8 justify-center z-50">
+        <div className="hidden md:block md:w-1/2 p-8 justify-center z-25">
           <img
             src={profit}
             alt="Profit Illustration"
