@@ -29,6 +29,7 @@ const Hero = () => {
             </button>
           </Link>
         </div>
+        <div className="hidden sm:flex text-green-500 mt-2 font-medium text-left ">Trusted by over 8M sellers around the world</div>
       </div>
 
       {/* Hero Image */}

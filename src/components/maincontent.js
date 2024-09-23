@@ -1,5 +1,6 @@
 import React from 'react';
-import productImage from '../assets/several.jpg'; // Replace with the correct path to your image
+import productImage from '../assets/several.jpg';
+import "./maincontent.css"
 
 const MainContent = () => {
   return (
@@ -11,8 +12,8 @@ const MainContent = () => {
           <img src={productImage} alt="Products" className="rounded-lg shadow-lg w-full h-auto" />
         </div>
 
-        {/* Right section: Description */}
-        <div className="w-full sm:w-1/2 sm:pl-12 text-center sm:text-left">
+        {/* Right section: Description with transition */}
+        <div className="w-full sm:w-1/2 sm:pl-12 text-center sm:text-left transition-transform duration-500 ease-out transform translate-y-10 opacity-0 animate-slide-up">
           <h1 className="text-3xl sm:text-4xl font-bold mb-6">
             Easily add your design to a wide range of products
           </h1>

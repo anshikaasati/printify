@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import profit from '../assets/image_converted.jpg';
+import './ts.css'; // Ensure you have this import for your CSS
 
 const ProfitCalculator = () => {
   return (
@@ -8,7 +9,7 @@ const ProfitCalculator = () => {
       <div className="container flex flex-col md:flex-row items-center bg-gray-900 text-white rounded-lg shadow-lg overflow-hidden">
         
         {/* Left Section */}
-        <div className="p-8 md:w-1/2">
+        <div className="p-8 md:w-1/2 animate-slide-in-right">
           <h2 className="text-4xl font-bold mb-4">Make Money, Risk-Free</h2>
           <p className="mb-6">You pay for fulfillment only when you make a sale</p>
           
@@ -41,9 +42,9 @@ const ProfitCalculator = () => {
         </div>
 
         {/* Right Section (Hidden on smaller screens) */}
-        <div className="hidden md:block md:w-1/2 p-8 justify-center">
+        <div className="hidden md:block md:w-1/2 p-8 justify-center z-50">
           <img
-            src={profit} // Replace with the actual image URL
+            src={profit}
             alt="Profit Illustration"
             className="w-full rounded-lg"
           />

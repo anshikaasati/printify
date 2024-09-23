@@ -1,0 +1,27 @@
+@keyframes slide-up {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .animate-slide-up {
+    animation: slide-up 0.4s forwards; /* Adjust duration as needed */
+  }
+  
+  .delay-100 {
+    animation-delay: 0.1s;
+  }
+  
+  .delay-200 {
+    animation-delay: 0.3s;
+  }
+  
+  .delay-300 {
+    animation-delay: 0.5s;
+  }
+  

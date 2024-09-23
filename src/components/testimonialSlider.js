@@ -5,6 +5,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import p1 from '../assets/young-bearded-man-with-striped-shirt.jpg';
 import p2 from '../assets/medium-shot-man-posing-lighthouse.jpg';
 import p3 from '../assets/medium-shot-security-officer-posing-studio.jpg';
+import "./ts.css";
 
 const testimonials = [
   {
@@ -13,7 +14,7 @@ const testimonials = [
     review:
       "Printify has been an incredible service for us musicians unable to keep a large amount of inventory. Now we can create designs too expensive to print without having 1,000 shirts in our jam space.",
     rating: 5,
-    image: p1, // You can replace this with the actual image URL
+    image: p1,
   },
   {
     name: "Quinten Barney",
@@ -54,17 +55,18 @@ const TestimonialSlider = () => {
 
   return (
     <div className="bg-gray-50 py-12 ">
-      <div className="container mx-auto text-center mb-8 mt-10 ">
-        <h2 className="text-4xl font-bold mb-4">Trusted by over 8M sellers around the world</h2>
-        <p className="text-gray-600">
-          Whether you're just getting started or run an enterprise-level e-commerce business, we ensure a positive merchant experience.
+      <div className="container flex ml-40 text-left gap-x-10 mb-8 mt-10 max-w-[800px] ">
+        <h2 className="text-4xl font-bold mb-4">Trusted by over 8M sellers around the<br></br> world</h2>
+        <p className="text-gray-600 animate-slide-in-left ">
+          <br></br>
+          Whether you're just getting started or run an<br></br> enterprise-level e-commerce business, we ensure a positive merchant experience.
         </p>
       </div>
       
       <div className="container mx-auto px-4 max-w-[1060px] ml-3 md:ml-40">
         <Slider {...settings}>
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="p-4">
+            <div key={index} className="p-4 opacity-0 transition-opacity duration-700 ease-in-out animate-slide-up">
               <div className="bg-white rounded-lg shadow-lg p-6 text-left">
                 <div className="flex items-center mb-4">
                   <img
