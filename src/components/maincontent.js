@@ -22,6 +22,7 @@ const MainContent = () => {
 
     return () => {
       if (contentRef.current) {
+        // eslint-disable-next-line react-hooks/exhaustive-deps
         observer.unobserve(contentRef.current);
       }
     };
